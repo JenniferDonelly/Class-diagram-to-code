@@ -18,6 +18,10 @@ public class Supplier {
         this.address = address;
     }
 
+    public int getSupplierId() {
+        return supplierId;
+    }
+
     public String getName() {
         return name;
     }
