@@ -35,7 +35,6 @@ public class Schedule {
         this.creator = creator;
     }
 
-    // Getters and Setters
     public LocalDate getDate() {
         return date;
     }
@@ -97,7 +96,6 @@ public class Schedule {
     }
 
     public static ArrayList<Schedule> getEmployeeScheduleByDate(Employee employee, LocalDate date) {
-        // Filter the schedules for the specific employee and for the given date
         List<Schedule> schedulesByDate = schedules.stream()
                 .filter(schedule -> schedule.getAssignedEmployee().equals(employee))
                 .filter(schedule -> schedule.getDate().equals(date))
