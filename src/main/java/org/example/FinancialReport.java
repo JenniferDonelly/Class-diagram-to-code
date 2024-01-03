@@ -85,6 +85,30 @@ public class FinancialReport {
         return endDate;
     }
 
+    public double getTotalRevenue() {
+        return totalRevenue;
+    }
+
+    public double getTotalExpenses() {
+        return totalExpenses;
+    }
+
+    public double getGrossProfit() {
+        return grossProfit;
+    }
+
+    public double getOperatingProfit() {
+        return operatingProfit;
+    }
+
+    public double getNetProfit() {
+        return netProfit;
+    }
+
+    public boolean isVerified() {
+        return verified;
+    }
+
     public void verifyReport() {
         this.verified = true;
     }
