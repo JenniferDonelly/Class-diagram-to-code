@@ -25,7 +25,7 @@ public class Schedule {
     // Constructor
     public Schedule(LocalDate date, LocalTime startTime, LocalTime endTime, Employee assignedEmployee, Manager creator) {
         this.scheduleId = scheduleIdCounter++;
-        schedules.add(scheduleId, this);
+        schedules.add(this);
 
         this.date = date;
         this.startTime = startTime;

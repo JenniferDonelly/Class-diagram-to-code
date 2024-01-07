@@ -22,7 +22,7 @@ public class Request {
 
 	private Request(RequestType requestType, String name, String description, Employee creator) {
 		this.requestId = requestIdCounter++;
-		requests.add(requestId, this);
+		requests.add(this);
 
 		this.requestType = requestType;
 		this.name = name;

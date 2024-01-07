@@ -12,7 +12,7 @@ public class Supplier {
 
     public Supplier(String name, String address) {
         this.supplierId = supplierIdCounter++;
-        suppliers.add(supplierId, this);
+        suppliers.add(this);
 
         this.name = name;
         this.address = address;
